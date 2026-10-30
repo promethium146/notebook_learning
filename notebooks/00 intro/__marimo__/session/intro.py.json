@@ -1,0 +1,94 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "MJUe",
+      "code_hash": "7f95f67a92b3a105185d1e8995fc1988",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">This exploration is taken from <a href=\"https://docs.ladybugdb.com/get-started/\" rel=\"noopener noreferrer\" target=\"_blank\">https://docs.ladybugdb.com/get-started/</a></span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "ce5eeed2682409fc17a67db4901c1d05",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "['Adam', 'Karissa', 2020]\n['Adam', 'Zhang', 2020]\n['Karissa', 'Zhang', 2021]\n['Zhang', 'Noura', 2022]\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "aad5eb129d5e1a8253c76709d6ded020",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "264eaf28b0f1382d1b2547838d5244cb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "WGbV",
+      "code_hash": "e1db0dbdd2814a06dc0fb77df4c965f5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": [
+        {
+          "type": "stream",
+          "name": "stdout",
+          "text": "{'a.name': 'Adam', 'b.name': 'Karissa'}\n{'a.name': 'Adam', 'b.name': 'Zhang'}\n{'a.name': 'Karissa', 'b.name': 'Zhang'}\n{'a.name': 'Zhang', 'b.name': 'Noura'}\n",
+          "mimetype": "text/plain"
+        }
+      ]
+    },
+    {
+      "id": "umls",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
