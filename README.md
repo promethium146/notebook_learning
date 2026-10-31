@@ -17,13 +17,27 @@ file picker instead.
 Run a notebook as a read-only app:
 
 ```bash
-uv run marimo run notebooks/intro.py
+uv run marimo run notebooks/00_intro/intro.py
 ```
 
 Run a notebook as a plain script:
 
 ```bash
-uv run notebooks/intro.py
+uv run notebooks/00_intro/intro.py
+```
+
+## Start the LadyBug Explorer WebApp
+
+```bash
+sudo docker run --rm -p 8000:8000 \
+    -v "$(pwd)/notebooks/00_intro":/database \
+    -e LBUG_FILE=intro.lbdb \
+    ghcr.io/ladybugdb/explorer:latest
+
+docker run -p 8000:8000 \
+           -v notebooks/00_intro:/database \
+           -e LBUG_FILE=intro.lbdb \
+           --rm ghcr.io/ladybugdb/explorer:latest
 ```
 
 ## Managing dependencies
@@ -33,11 +47,3 @@ uv add <package>      # add a dependency (updates pyproject.toml and uv.lock)
 uv remove <package>   # remove one
 uv sync               # re-sync .venv with uv.lock
 ```
-
-## Updating the CLI
-
-```bash
-yay -Syu              # or: yay -Sua  (AUR packages only)
-```
-
-Read the `PKGBUILD` diff yay offers before accepting an update.
