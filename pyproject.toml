@@ -1,7 +1,7 @@
 [project]
-name = "ladybugdb-learning"
+name = "python-learning"
 version = "0.1.0"
-description = "Add your description here"
+description = "Notebooks for learning Python libraries and frameworks"
 readme = "README.md"
 authors = [
     { name = "David Hadaller", email = "dahadaller@gmail.com" }
@@ -11,10 +11,3 @@ dependencies = [
     "ladybug>=0.22.1",
     "marimo>=0.25.2",
 ]
-
-[project.scripts]
-ladybugdb-learning = "ladybugdb_learning:main"
-
-[build-system]
-requires = ["uv_build>=0.13.6,<0.14.0"]
-build-backend = "uv_build"

@@ -148,21 +148,6 @@ wheels = [
 ]
 
 [[package]]
-name = "ladybugdb-learning"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "ladybug" },
-    { name = "marimo" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "ladybug", specifier = ">=0.22.1" },
-    { name = "marimo", specifier = ">=0.25.2" },
-]
-
-[[package]]
 name = "loro"
 version = "1.17.1"
 source = { registry = "https://pypi.org/simple" }
@@ -350,6 +335,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/ad/17/2db4b414de89659144488e0d9c6c0bf0c8395841dc12d81d0532cc6ef310/pymdown_extensions-11.0.2.tar.gz", hash = "sha256:9506fcbe66fa355a775b768084334238dd6805020ac4b92bea0c0dda6f8f223d", size = 855419, upload-time = "2026-08-22T19:28:47.236Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a6/43/9f45ec4d14e596efc32c925a78104934790438b0c0628b70d741016734ad/pymdown_extensions-11.0.2-py3-none-any.whl", hash = "sha256:259910762019732caa1dfd76f3faa62c59f191d46573e80bcb1d13c0f675bbe5", size = 269929, upload-time = "2026-08-22T19:28:45.389Z" },
+]
+
+[[package]]
+name = "python-learning"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "ladybug" },
+    { name = "marimo" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "ladybug", specifier = ">=0.22.1" },
+    { name = "marimo", specifier = ">=0.25.2" },
 ]
 
 [[package]]

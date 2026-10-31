@@ -24,7 +24,7 @@ def _(mo):
     import ladybug as lb
     from pathlib import Path
 
-    NOTEBOOK_DIR = mo.notebook_dir() or Path.cwd()
+    NOTEBOOK_DIR = mo.notebook_dir() or Path(__file__).resolve().parent
     DATA_DIR = NOTEBOOK_DIR / "data"
     DB_PATH = NOTEBOOK_DIR / "intro.lbdb"
 
@@ -81,12 +81,12 @@ def _(conn):
 
     def _():
         response = conn.execute(
-    """
-    MATCH (a:User)-[r:Follows*1..5]->(b:User)
-    WHERE a.name = 'Adam'
-    RETURN b.name, length(r) AS hops
-    ORDER BY hops;
-    """
+            """
+            MATCH (a:User)-[r:Follows*1..5]->(b:User)
+            WHERE a.name = 'Adam'
+            RETURN b.name, length(r) AS hops
+            ORDER BY hops;
+            """
         )
         rows = list(response.rows_as_dict())
         return rows
@@ -110,11 +110,6 @@ def _(conn):
         return list(result.rows_as_dict())
 
     find_paths("Adam", "Noura")
-    return
-
-
-@app.cell
-def _():
     return
 
 
